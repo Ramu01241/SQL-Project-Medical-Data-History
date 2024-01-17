@@ -193,8 +193,8 @@ where diagnosis = 'Epilepsy' and d.first_name = 'Lisa';
     -- the numerical length of patient's last_name
     -- year of patient's birth_date
 SELECT 
-		a.patient_id,
-		CONCAT(
+	a.patient_id,
+	CONCAT(
         a.patient_id,
         LENGTH(p.last_name),
         YEAR(p.birth_date)
